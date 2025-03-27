@@ -5,31 +5,31 @@ import 'package:google_play_ui_clone/view/bottom_navbar.dart';
 class MoviesPage extends StatelessWidget {
   final List<Map<String, dynamic>> newMovies = [
     {
-      "title": "September 5",
+      "title": "Wonder",
       "price": "Rp 29.000,00",
       "rating": 5.0,
       "poster": "assets/movie_images/Wonder.jpeg",
     },
     {
-      "title": "The Last Showgirl",
+      "title": "Us",
       "price": "Rp 28.000,00",
       "rating": 1.0,
       "poster": "assets/movie_images/US.jpeg",
     },
     {
-      "title": "Red One",
+      "title": "Titanic",
       "price": "Rp 175.000,00",
       "rating": 4.0,
       "poster": "assets/movie_images/Titanic.jpeg",
     },
     {
-      "title": "Batman Ninja vs. Yakuza League",
+      "title": "Smile",
       "price": "Rp 159.000,00",
       "rating": 3.5,
       "poster": "assets/movie_images/Smile.jpeg",
     },
     {
-      "title": "Wolf Man (2025)",
+      "title": "Openheimer",
       "price": "Rp 152.000,00",
       "rating": 3.5,
       "poster": "assets/movie_images/Openheimer.jpeg",
@@ -37,11 +37,11 @@ class MoviesPage extends StatelessWidget {
   ];
 
   final List<Map<String, dynamic>> topSellingMovies = [
-    {"title": "Death at a Funeral", "poster": "assets/movie_images/Joker.jpeg"},
-    {"title": "Minzy", "poster": "assets/movie_images/IT.jpeg"},
-    {"title": "The Intern", "poster": "assets/movie_images/Hellboy.jpeg"},
-    {"title": "The Walk", "poster": "assets/movie_images/Harry.jpeg"},
-    {"title": "World Trade Center", "poster": "assets/movie_images/Alone.jpeg"},
+    {"title": "Joker", "poster": "assets/movie_images/Joker.jpeg"},
+    {"title": "IT", "poster": "assets/movie_images/IT.jpeg"},
+    {"title": "Hellboy", "poster": "assets/movie_images/Hellboy.jpeg"},
+    {"title": "Harry Potter", "poster": "assets/movie_images/Harry.jpeg"},
+    {"title": "Alone", "poster": "assets/movie_images/Alone.jpeg"},
   ];
 
   @override
@@ -54,7 +54,6 @@ class MoviesPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
- 
               Text(
                 "New to buy or rent",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -73,7 +72,6 @@ class MoviesPage extends StatelessWidget {
               ),
 
               SizedBox(height: 20),
-
 
               Text(
                 "Top selling",
@@ -102,7 +100,6 @@ class MoviesPage extends StatelessWidget {
       bottomNavigationBar: CustomBottomAppBar(),
     );
   }
-
 
   Widget movieCard(Map<String, dynamic> movie) {
     return Padding(
@@ -134,7 +131,6 @@ class MoviesPage extends StatelessWidget {
       ),
     );
   }
-
 
   Widget topSellingCard(Map<String, dynamic> movie) {
     return Padding(
